@@ -58,15 +58,11 @@ public class RTTC_019_DeleteReturnedProduct {
 	{
 		Thread.sleep(6000);
 		adminhomePOM.salestab();
-		Thread.sleep(3000);
 		adminhomePOM.returnsclick();
-		Thread.sleep(3000);
 		adminhomePOM.returncheckbox();
-		Thread.sleep(3000);
 		adminhomePOM.deletefn();
-		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		String ExpectedMsg="Success: You have modified returns!";
 		String ActualMsg=adminhomePOM.successmsgfn();
 		Assert.assertTrue(ActualMsg.contains(ExpectedMsg));

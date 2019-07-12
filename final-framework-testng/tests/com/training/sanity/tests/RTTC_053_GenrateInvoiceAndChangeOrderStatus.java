@@ -12,18 +12,20 @@ import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
 import com.training.pom.AdminHomePOM;
+import com.training.pom.CustomersPOM;
 import com.training.pom.LoginPOM;
+import com.training.pom.OrdersPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RTTC_020_FilterCustomersViaAdmin {
+public class RTTC_053_GenrateInvoiceAndChangeOrderStatus {
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
-	private AdminHomePOM adminhomePOM;
+	private OrdersPOM ordersPOM;
+	private CustomersPOM customersPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
-
 
 	@BeforeClass
 	public void setUpBeforeClass() throws IOException {
@@ -32,7 +34,8 @@ public class RTTC_020_FilterCustomersViaAdmin {
 		properties.load(inStream);
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
-		adminhomePOM = new AdminHomePOM(driver);
+		ordersPOM = new OrdersPOM(driver);
+		customersPOM = new CustomersPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		driver.get(baseUrl);
@@ -41,7 +44,7 @@ public class RTTC_020_FilterCustomersViaAdmin {
 	@AfterClass
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		driver.quit();
+//		driver.quit();
 	}
 	@Test	
 	public void LoginTest() throws InterruptedException {
@@ -51,24 +54,27 @@ public class RTTC_020_FilterCustomersViaAdmin {
 		loginPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");
 		}
+	/*This function generates invoice as an admin for those cusotmers whose order
+	 * is placed and also changes the order status to Complete */
+	 
 	
 	@Test
-	public void deleteCustViaAdmin() throws InterruptedException
+	public void generateInvoiceChangeOrderStatus() throws InterruptedException
 	{
-		Thread.sleep(6000);
-		adminhomePOM.MenuTabfn();
-		adminhomePOM.custtabfn();
-		adminhomePOM.custsubtabfn();
-		adminhomePOM.custnamefn();
-		adminhomePOM.filterBtnfn();
-		String ExpectedName="manzoor";
-		String ActualName=adminhomePOM.resultCustNamefn();
-		System.out.println("Actual Customer Name is:" + ActualName);
-		System.out.println("Expected Customer Name is:" + ExpectedName);
-		Assert.assertTrue(ActualName.contains(ExpectedName));
-		Thread.sleep(3000);
-		adminhomePOM.emailtxtfn();
-		adminhomePOM.filterBtnfn();
-		Assert.assertTrue(ActualName.contains(ExpectedName));
+		customersPOM.MenuTabfn();
+		ordersPOM.salestabFn();
+		ordersPOM.OrderSubtabfn();
+		ordersPOM.custNameFn();
+		ordersPOM.viewBtnFn();
+		ordersPOM.invoiceBtnFn();
+		driver.switchTo().defaultContent();
+		ordersPOM.statusDropDown();
+		ordersPOM.addHistoryFn();
+		String ExpectedMsg="Success: You have modified orders!";
+		System.out.println("Expected Message is- "+ ExpectedMsg);
+		String ActualMsg=ordersPOM.successMsgFn();
+		System.out.println("Actual Message is-  "+ ActualMsg);
+		Assert.assertTrue(ActualMsg.contains(ExpectedMsg));
+		
 	}
 }

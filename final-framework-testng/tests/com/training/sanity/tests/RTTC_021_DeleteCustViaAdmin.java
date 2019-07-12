@@ -55,23 +55,14 @@ public class RTTC_021_DeleteCustViaAdmin {
 	@Test
 	public void deleteCustViaEmail() throws InterruptedException
 	{
-		Thread.sleep(6000);
 		adminhomePOM.MenuTabfn();
 		adminhomePOM.custtabfn();
-		Thread.sleep(3000);
 		adminhomePOM.custsubtabfn();
-		Thread.sleep(3000);
 		adminhomePOM.custnamefn();
-		Thread.sleep(3000);
 		adminhomePOM.filterBtnfn();
-		Thread.sleep(2000);
 		adminhomePOM.custchkboxbasedonemailfn();
-		Thread.sleep(2000);
 		adminhomePOM.deletefn();
-		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
-		Thread.sleep(4000);
-		Thread.sleep(3000);
 		String ExpectedMsg="Success: You have modified customers!";
 		String ActualMsg=adminhomePOM.successmsgfn();
 		Assert.assertTrue(ActualMsg.contains(ExpectedMsg));

@@ -50,6 +50,7 @@ public class AdminHomePOM {
 	
 	@FindBy(xpath="//table[@class='table table-bordered table-hover']//tbody//tr//td[contains(text(),'manzoor979@gmail.com')]//preceding-sibling::td//input")
 	private WebElement custBasedOnEmail;
+
 	
 	@FindBy(id="input-email")
 	private WebElement emailtxt;
