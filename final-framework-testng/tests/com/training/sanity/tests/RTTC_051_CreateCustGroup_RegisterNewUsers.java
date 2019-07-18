@@ -70,7 +70,6 @@ public class RTTC_051_CreateCustGroup_RegisterNewUsers {
 		customersPOM.custGroupDescFn();
 		customersPOM.approveCustomerFn();
 		customersPOM.savecustGroupFn();
-		Thread.sleep(2000);
 		String ExpectedMsg="Success: You have modified customer groups!";
 		System.out.println("Expected Message is- "+ ExpectedMsg);
 		String ActualMsg=customersPOM.successMsgGroupCreationFn();

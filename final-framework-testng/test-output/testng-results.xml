@@ -2,28 +2,70 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23382" started-at="2019-07-12T11:57:13Z" finished-at="2019-07-12T11:57:36Z">
+  <suite name="Default suite" duration-ms="45960" started-at="2019-07-18T09:15:06Z" finished-at="2019-07-18T09:15:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23382" started-at="2019-07-12T11:57:13Z" finished-at="2019-07-12T11:57:36Z">
-      <class name="com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus@3ffc5af1]" name="setUpBeforeClass" is-config="true" duration-ms="6372" started-at="2019-07-12T11:57:13Z" finished-at="2019-07-12T11:57:19Z">
+    <test name="Default test" duration-ms="45960" started-at="2019-07-18T09:15:06Z" finished-at="2019-07-18T09:15:52Z">
+      <class name="com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="setUpBeforeClass" is-config="true" duration-ms="20139" started-at="2019-07-18T09:15:06Z" finished-at="2019-07-18T09:15:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus@3ffc5af1]" name="LoginTest" duration-ms="8181" started-at="2019-07-12T11:57:19Z" finished-at="2019-07-12T11:57:27Z">
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="LoginTest" duration-ms="15667" started-at="2019-07-18T09:15:26Z" finished-at="2019-07-18T09:15:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="generateInvoiceChangeOrderStatus()[pri:0, instance:com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus@3ffc5af1]" name="generateInvoiceChangeOrderStatus" duration-ms="7796" started-at="2019-07-12T11:57:27Z" finished-at="2019-07-12T11:57:35Z">
+        <test-method status="PASS" signature="returnNDeleteProd(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="returnNDeleteProd" duration-ms="8655" started-at="2019-07-18T09:15:42Z" data-provider="db-inputs" finished-at="2019-07-18T09:15:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sooman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sooman]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[bose]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sbose@abc.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Integer vitae iaculis massa]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateInvoiceChangeOrderStatus -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus@3ffc5af1]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-07-12T11:57:35Z" finished-at="2019-07-12T11:57:36Z">
+        </test-method> <!-- returnNDeleteProd -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-07-18T09:15:51Z" finished-at="2019-07-18T09:15:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus -->
+      </class> <!-- com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

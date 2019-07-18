@@ -2,18 +2,20 @@ package com.training.bean;
 
 /**
  * 
- * @author Naveen
+ * @author Deepa
  * @see this class shall get the bean data 
  */
 public class DBBean {
-	private String url; 
-	private String driver; 
-	private String userName; 
+ 
+
+	private String url;
+	private String driver;
+	private String userName;
 	private String password;
 	
-	public DBBean(){}
+	public DBBean() {}
 	
-	public DBBean(String url, String driver, String userName, String password) {
+	public DBBean(String url, String driver, String userName, String password){
 		super();
 		this.url = url;
 		this.driver = driver;
@@ -21,38 +23,36 @@ public class DBBean {
 		this.password = password;
 	}
 
-	public String getUrl() {
+	public String geturl() {
 		return url;
 	}
 
-	public void setUrl(String url) {
+	public void seturl(String url) {
 		this.url = url;
 	}
 
-	public String getDriver() {
+	public String getdriver() {
 		return driver;
 	}
 
-	public void setDriver(String driver) {
+	public void setdriver(String driver) {
 		this.driver = driver;
 	}
 
-	public String getUserName() {
+	public String getuserName() {
 		return userName;
 	}
 
-	public void setUserName(String userName) {
+	public void setuserName(String userName) {
 		this.userName = userName;
 	}
 
-	public String getPassword() {
+	public String getpassword() {
 		return password;
 	}
 
-	public void setPassword(String password) {
+	public void setpassword(String password) {
 		this.password = password;
 	}
-	
-	
 	
 }

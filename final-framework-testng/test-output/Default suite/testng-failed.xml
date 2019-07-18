@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus">
+      <class name="com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB">
         <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="generateInvoiceChangeOrderStatus"/>
           <include name="tearDown"/>
+          <include name="returnNDeleteProd" invocation-numbers="0"/>
+          <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.RTTC_053_GenrateInvoiceAndChangeOrderStatus -->
+      </class> <!-- com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
