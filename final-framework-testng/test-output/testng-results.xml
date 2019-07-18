@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45960" started-at="2019-07-18T09:15:06Z" finished-at="2019-07-18T09:15:52Z">
+  <suite name="Default suite" duration-ms="47550" started-at="2019-07-18T10:15:22Z" finished-at="2019-07-18T10:16:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45960" started-at="2019-07-18T09:15:06Z" finished-at="2019-07-18T09:15:52Z">
+    <test name="Default test" duration-ms="47550" started-at="2019-07-18T10:15:22Z" finished-at="2019-07-18T10:16:09Z">
       <class name="com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="setUpBeforeClass" is-config="true" duration-ms="20139" started-at="2019-07-18T09:15:06Z" finished-at="2019-07-18T09:15:26Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="setUpBeforeClass" is-config="true" duration-ms="19526" started-at="2019-07-18T10:15:22Z" finished-at="2019-07-18T10:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="LoginTest" duration-ms="15667" started-at="2019-07-18T09:15:26Z" finished-at="2019-07-18T09:15:42Z">
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="LoginTest" duration-ms="16262" started-at="2019-07-18T10:15:41Z" finished-at="2019-07-18T10:15:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="returnNDeleteProd(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="returnNDeleteProd" duration-ms="8655" started-at="2019-07-18T09:15:42Z" data-provider="db-inputs" finished-at="2019-07-18T09:15:51Z">
+        <test-method status="PASS" signature="returnNDeleteProd(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="returnNDeleteProd" duration-ms="10232" started-at="2019-07-18T10:15:58Z" data-provider="db-inputs" finished-at="2019-07-18T10:16:08Z">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- returnNDeleteProd -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-07-18T09:15:51Z" finished-at="2019-07-18T09:15:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_081_ReturnNDeleteProd_UpdateDB@5e5792a0]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-07-18T10:16:08Z" finished-at="2019-07-18T10:16:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
